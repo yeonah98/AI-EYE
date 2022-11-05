@@ -20,7 +20,7 @@ body, h1, h2, h3, p, button{
     font-weight: normal;
 }
 
-a {
+a, button {
     text-decoration: none; 
     outline: none;
     text-align: center;    
@@ -123,11 +123,10 @@ body {
 .btn {
     background-color: var(--button-background-color);
     color: var(--button-font-color);
-    padding: 10px;
+    padding: 14px 8px;
     border-radius: 6px;
     font-size: 1.4rem;
     width: 100px;
-    margin-left: 10%;
 }
 .btn:hover {
     cursor: pointer;
@@ -145,8 +144,11 @@ body {
     display: flex;
     padding: 2rem;
     margin-bottom: 1rem;
+    justify-content: space-between;
 }
-
+.whiteBox a {
+    margin-left: 10%;
+}
 /* profile 부분 */
 
 .profile h2 {
