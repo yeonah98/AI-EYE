@@ -1,3 +1,16 @@
+
+/* 개발때만 사용 */
+/* .alarmHistory {
+    border: 1px solid green;
+}
+.setting {
+    border: 1px solid blue;
+}
+.notice{
+    border: 1px solid purple;
+} */
+
+
 /* UA Reset */
 body, h1, h2, h3, p, button{
     margin: 0;
@@ -12,17 +25,6 @@ a {
     outline: none;
     text-align: center;    
 }
-
-/* 개발때만 사용 */
-/* .alarmHistory {
-    border: 1px solid green;
-}
-.setting {
-    border: 1px solid blue;
-}
-.notice{
-    border: 1px solid purple;
-} */
 
 /* Typography */
 :root {
@@ -125,6 +127,7 @@ body {
     border-radius: 6px;
     font-size: 1.4rem;
     width: 100px;
+    margin-left: 10%;
 }
 .btn:hover {
     cursor: pointer;
@@ -142,8 +145,6 @@ body {
     display: flex;
     padding: 2rem;
     margin-bottom: 1rem;
-    justify-content: center;
-    align-items : center;
 }
 
 /* profile 부분 */
@@ -166,7 +167,8 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
+    margin-left: 0;
 }
 
 /* 웹캠 설정 부분 */

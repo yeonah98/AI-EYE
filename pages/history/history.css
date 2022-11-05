@@ -1,3 +1,19 @@
+
+/* 개발때만 사용 */
+/* .nav {
+    border: 1px solid green;
+}
+.content {
+    border: 1px solid black;
+}
+.noSee {
+    border: 1px solid blue;
+}
+.yesSee{
+    border: 1px solid purple;
+} */
+
+
 /* UA Reset */
 body, h1, h2, h3, p, button{
     margin: 0;
@@ -36,7 +52,7 @@ a {
 
 /* Layout */
 body {
-    max-width: 800px; 
+    max-width: 500px; 
     margin: 0 auto;
     background-color: var(--background-color)
 }
@@ -52,14 +68,32 @@ body {
     display: flex;
     position: absolute;
     top: 50%;
-    left: 15%;
-    transform: translate(-50px, -50%)
+    transform: translate(20px, -50%)
 }
 
 .content {
     height: 90vh;
     box-sizing: border-box;
     position: relative;
+    overflow: auto;
+}
+
+.noSee {
+    justify-content: center;
+    align-items : center;
+}
+
+.noSee_wrapper {
+   margin: 20px 40px;
+}
+
+.yesSee {
+    justify-content: center;
+    align-items : center;
+}
+
+.yesSee_wrapper {
+    margin: 20px 40px;
 }
 
 /* Components */
@@ -67,7 +101,39 @@ body {
     height: 18px;
 }
 
+.icon_camera {
+    height: 30px;
+    margin-left: 20%;
+    filter: opacity(0.5) drop-shadow(0 0 0 #362d20);
+}
+
+.content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.whiteBox {
+    background-color: var(--white-box);
+    border-radius: 5px;
+    padding: 2rem;
+    margin-bottom: 1rem;
+    display: flex;
+}
+.whiteBox h3 {
+    font-size: 1.6rem;
+}
+.whiteBox p {
+    font-size: 1.2rem;
+}
+
+
 /* nav 부분 */
 .icon_arrow {
-
+    margin-right: 1rem;
 }
+
+.nav h2 {
+    font-size: 2rem;
+}
+
+/* 읽지 않은 알림 부분 */
