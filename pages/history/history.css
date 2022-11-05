@@ -1,0 +1,73 @@
+/* UA Reset */
+body, h1, h2, h3, p, button{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none; 
+    outline: none;
+    text-align: center;    
+}
+
+/* Typography */
+
+:root {
+    font-size: 62.5%; /* 10px */
+    color: var(--font-color);
+}
+
+/* Colors */
+:root {
+    --background-color: #F4F3F4;
+    --main-color: #F5E495;
+    --font-color: #4a4846;
+    --white-box: #FEFFFF;
+    --button-background-color: #EAC645;
+    --button-font-color: #fefefe;
+    --button-hover-color: #ecd149;
+    --red-color: #D4412D;
+    --green-color: #65C87A;
+}
+
+
+/* Layout */
+body {
+    max-width: 800px; 
+    margin: 0 auto;
+    background-color: var(--background-color)
+}
+
+.nav {
+    background-color: var(--main-color);
+    height: 10vh;
+    position: relative;
+    display: flex;
+}
+
+.nav_wrapper {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translate(-50px, -50%)
+}
+
+.content {
+    height: 90vh;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* Components */
+.icon_arrow {
+    height: 18px;
+}
+
+/* nav 부분 */
+.icon_arrow {
+
+}

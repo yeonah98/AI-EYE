@@ -6,12 +6,25 @@ body, h1, h2, h3, p, button{
     font-size: 1rem;
     font-weight: normal;
 }
-button {
-    border-radius: 0;
+
+a {
+    text-decoration: none; 
+    outline: none;
+    text-align: center;    
 }
 
-/* Typography */
+/* 개발때만 사용 */
+/* .alarmHistory {
+    border: 1px solid green;
+}
+.setting {
+    border: 1px solid blue;
+}
+.notice{
+    border: 1px solid purple;
+} */
 
+/* Typography */
 :root {
     font-size: 62.5%; /* 10px */
     color: var(--font-color);
@@ -32,7 +45,7 @@ button {
 
 /* Layout */
 body {
-    max-width: 1049px; 
+    max-width: 500px; 
     margin: 0 auto;
     background-color: var(--background-color)
 }
@@ -46,11 +59,10 @@ body {
 
 .profile_wrapper {
     display: flex;
-    vertical-align: middle;
     position: absolute;
     top: 50%;
-    left: 25%;
-    transform: translate(-50px, -50%)
+    left: 10%;
+    transform: translate(0, -50%)
 }
 
 .content {
@@ -58,37 +70,32 @@ body {
 }
 
 .alarmHistory {
-    /* border: 1px solid green; */
-    height: 25%;
+    height: 20%;
     position: relative;
 }
 
 .setting {
-    /* border: 1px solid blue; */
     height: 30%;
-    position: relative;
+    justify-content: center;
+    align-items : center;
 }
 
 .setting_wrapper {
     box-sizing: border-box;
     width: auto;
-    position: absolute;
-    left: 25%;
-    transform: translate(-50px, 0)
+    margin: 20px 40px;
 }
 
 .notice{
-    /* border: 1px solid purple; */
-    height: 45%;
+    height: 50%;
     box-sizing: border-box;
-    position: relative;
+    justify-content: center;
+    align-items : center;
 }
 
 .notice_wrapper {
-    position: absolute;
-    left: 25%;
-    transform: translate(-50px, 0);
     box-sizing: border-box;
+    margin: 20px 40px;
 }
 
 /* Components */
@@ -117,7 +124,7 @@ body {
     padding: 10px;
     border-radius: 6px;
     font-size: 1.4rem;
-    width: 150px;
+    width: 100px;
 }
 .btn:hover {
     cursor: pointer;
@@ -134,6 +141,9 @@ body {
     border-radius: 5px;
     display: flex;
     padding: 2rem;
+    margin-bottom: 1rem;
+    justify-content: center;
+    align-items : center;
 }
 
 /* profile 부분 */
@@ -174,4 +184,5 @@ body {
 /* 공지사항 부분 */
 .notice p {
     font-size: 1.4rem;
+    margin-bottom: 1rem;
 }
