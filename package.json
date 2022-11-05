@@ -1,0 +1,19 @@
+{
+  "name": "ai-eye",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yeonah98/AI-EYE.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yeonah98/AI-EYE/issues"
+  },
+  "homepage": "https://github.com/yeonah98/AI-EYE#readme"
+}
